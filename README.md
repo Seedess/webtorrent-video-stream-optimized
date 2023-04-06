@@ -22,6 +22,19 @@
 </h5>
 <br>
 
+## OPtimizations
+
+Optimizations are added to: https://github.com/Seedess/webtorrent-video-stream-optimized/tree/optimizations
+
+These optimizations are on a specific older version of WebTorrent `v1.8.25`. This allows using `RenderMedia/renderTo()` which was removed later. Optimizations will be moved to the latest version (which prefers ServiceWorkers over RenderMedia) at some point. 
+
+
+```
+git clone https://github.com/Seedess/webtorrent-video-stream-optimized
+git checkout optimizations
+
+```
+
 **WebTorrent** is a streaming torrent client for **node.js** and the **browser**. YEP,
 THAT'S RIGHT. THE BROWSER. It's written completely in JavaScript – the language of the web
 – so the same code works in both runtimes.
